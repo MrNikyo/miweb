@@ -1,0 +1,2 @@
+cosa= "Cosa"
+print(cosa)
