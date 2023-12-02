@@ -1,4 +1,5 @@
 <?php
+    header("Content-Type: text/html"); // Ajusta el tipo de contenido según sea necesario
     $rango1 = 0;
     $rango2 = 34;
     $num = rand($rango1,$rango2);
