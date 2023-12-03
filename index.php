@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cositas</title>
-    <meta http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-    <h1><a href="random.php">Hola</a></h1>
-</body>
-</html>
+<?php
+    header("Content-Type: text/html"); // Ajusta el tipo de contenido según sea necesario
+    $rango1 = 0;
+    $rango2 = 34;
+    $num = rand($rango1, $rango2);
+
+    if ($num == $rango1) {
+        $resultado = "No hay ni rastro de haber existido tula";
+    } elseif ($num == $rango2) {
+        $resultado = "Es tan grande que no le cabe en el pantalón";
+    } else {
+        $resultado = "Le mide: " . $num;
+    }
+
+    echo $resultado;
+?>
